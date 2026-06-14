@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>NightObrit - Anas Farooq · Tecnical Authoritys</title>
+    <title>NightOrbit - Anas Farooq · Technical Authoritys</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -85,14 +85,14 @@
         .page.active-page { display: block; }
         @keyframes fade { from { opacity: 0; transform: translateY(6px);} to { opacity: 1; } }
         
-        /* HEAVY CERTIFICATE STYLES — now with blue accent (#3b82f6) as per screenshots */
+        /* HEAVY CERTIFICATE STYLES */
         .heavy-cert {
             background: #0b0e17;
             border: 2px solid #3b82f6;
             border-radius: 2rem;
             padding: 2rem;
             margin: 1rem auto;
-            max-width: 1000px;
+            max-width: 900px;
             box-shadow: 0 20px 35px -12px rgba(0,0,0,0.6), inset 0 0 20px rgba(59,130,246,0.1);
         }
         .heavy-cert-header {
@@ -102,15 +102,11 @@
             margin-bottom: 1.5rem;
         }
         .heavy-cert-header h1 {
-            font-size: 2.2rem;
+            font-size: 2rem;
             font-weight: 900;
-            letter-spacing: 4px;
+            letter-spacing: 2px;
             color: #3b82f6;
             text-shadow: none;
-        }
-        .heavy-cert-header .sub {
-            color: #3b82f6;
-            letter-spacing: 2px;
         }
         .cert-profile {
             display: flex;
@@ -119,7 +115,7 @@
             background: #0f1220;
             border-radius: 1.5rem;
             padding: 1rem 1.5rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             border: 1px solid #2d2a4e;
         }
         .cert-avatar {
@@ -133,49 +129,7 @@
         .cert-avatar img { width: 100%; height: 100%; object-fit: cover; }
         .cert-profile-info h2 { color: white; font-size: 1.8rem; font-weight: 800; }
         .cert-profile-info .role { color: #3b82f6; font-weight: 700; }
-        .cert-profile-info .project { color: #8b9cc7; font-size: 0.85rem; }
         
-        .power-list {
-            display: flex;
-            flex-direction: column;
-            gap: 1.2rem;
-            margin: 1.8rem 0;
-        }
-        .power-item {
-            background: #0f1220;
-            border-left: 5px solid #3b82f6;
-            padding: 1rem 1.2rem;
-            border-radius: 1rem;
-        }
-        .power-item h3 {
-            color: #3b82f6;
-            font-size: 1.2rem;
-            font-weight: 800;
-            margin-bottom: 0.4rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .power-item p {
-            color: #cbd5e6;
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
-        .cert-footer-heavy {
-            margin-top: 2rem;
-            padding-top: 1.2rem;
-            border-top: 1px solid #2d2a4e;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        .stamp-heavy { color: #3b82f6; font-family: monospace; font-weight: bold; }
-        .signature-heavy { text-align: right; color: #3b82f6; }
-        .sign-line { width: 180px; height: 2px; background: #3b82f6; margin-top: 5px; }
-        
-        /* Grid for authority page - same style but content changed */
         .grid-heavy {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -200,7 +154,6 @@
             margin-top: 0.8rem;
         }
         
-        /* Owner identity cards - same as before but with new text */
         .owner-card-full {
             background: #111622;
             border: 1px solid #232B3E;
@@ -210,16 +163,8 @@
             transition: 0.2s;
         }
         .owner-card-full:hover { border-color: #7C3AED; transform: translateX(4px); }
-        .owner-card-full h3 {
-            color: #A78BFA;
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-        }
-        .owner-card-full p {
-            color: #cbd5e6;
-            margin-bottom: 0.8rem;
-            line-height: 1.5;
-        }
+        .owner-card-full h3 { color: #A78BFA; font-size: 1.3rem; margin-bottom: 0.5rem; }
+        .owner-card-full p { color: #cbd5e6; margin-bottom: 0.8rem; line-height: 1.5; }
         
         .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 1.5rem; margin: 1.5rem 0; }
         .project-item { background: #111622; border: 1px solid #232B3E; border-radius: 1.5rem; padding: 1.5rem; text-align: center; }
@@ -258,48 +203,19 @@
             .main-app { padding: 0.8rem; }
             .heavy-cert { padding: 1rem; margin: 0.5rem; }
             .heavy-cert-header h1 { font-size: 1.4rem; letter-spacing: 2px; }
-            .heavy-cert-header .sub { font-size: 0.7rem; }
             .cert-profile { flex-direction: column; text-align: center; gap: 0.8rem; padding: 1rem; }
             .cert-avatar { width: 70px; height: 70px; margin: 0 auto; }
             .cert-profile-info h2 { font-size: 1.2rem; }
             .cert-profile-info .role { font-size: 0.7rem; }
-            .cert-profile-info .project { font-size: 0.65rem; }
-            .power-item { padding: 0.7rem; }
-            .power-item h3 { font-size: 0.9rem; gap: 4px; }
-            .power-item p { font-size: 0.75rem; }
-            .power-list { gap: 0.8rem; margin: 1rem 0; }
-            .cert-footer-heavy { flex-direction: column; text-align: center; gap: 0.5rem; }
-            .signature-heavy { text-align: center; }
-            .sign-line { width: 120px; margin: 5px auto 0; }
             .grid-heavy { grid-template-columns: 1fr; gap: 1rem; }
             .auth-card { padding: 1rem; }
-            .auth-card h3 { font-size: 1rem; }
-            .auth-card p { font-size: 0.8rem; }
-            .owner-card-full { padding: 1rem; }
-            .owner-card-full h3 { font-size: 1rem; }
-            .owner-card-full p { font-size: 0.8rem; }
             .projects-grid { grid-template-columns: 1fr; gap: 1rem; }
             .project-item { padding: 1rem; }
-            .project-item h3 { font-size: 1rem; }
             .social-row { flex-direction: column; gap: 0.8rem; align-items: center; }
-            .social-heavy { padding: 0.5rem 1rem; font-size: 0.8rem; }
             .collab-form, .track-section, .admin-panel { padding: 1rem; margin-bottom: 1rem; }
-            .form-group input, .form-group textarea { padding: 0.6rem 1rem; font-size: 0.8rem; }
             .submit-btn { padding: 0.5rem 1rem; font-size: 0.8rem; }
             .requests-table { font-size: 0.65rem; }
-            .requests-table th, .requests-table td { padding: 0.4rem; }
-            .reply-area { flex-direction: column; }
-            .reply-input { width: 100%; }
             footer { font-size: 0.6rem; margin-top: 1.5rem; }
-            .protected-link-btn { padding: 0.3rem 0.7rem; font-size: 0.7rem; }
-            .badge-source { font-size: 0.6rem; padding: 0.15rem 0.6rem; }
-            .vip-badge { font-size: 0.6rem; }
-        }
-        @media (max-width: 480px) {
-            .heavy-cert-header h1 { font-size: 1.2rem; }
-            .cert-profile-info h2 { font-size: 1rem; }
-            .power-item h3 { font-size: 0.8rem; }
-            .power-item p { font-size: 0.7rem; }
         }
     </style>
 </head>
@@ -320,13 +236,12 @@
 <!-- MAIN APP -->
 <div id="mainApp" class="main-app">
     <div class="modern-nav">
-        <!-- Logo image replaced with 'æ' character as requested -->
         <div style="display: flex; align-items: center; gap: 8px;">
             <span style="font-size: 2rem; font-weight: bold; color: #f5b042; background: #0F1422; width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid #3b82f6;">æ</span>
             <strong>NIGHTORBIT · OFFICIAL</strong> <span id="userTypeBadge" style="margin-left: 0.5rem;"></span>
         </div>
         <div class="nav-links">
-            <button class="nav-btn" data-page="cert">📜 Certificate</button>
+            <button class="nav-btn" data-page="cert">📜 Official CV Document</button>
             <button class="nav-btn" data-page="authority">⚙️ Technical Authority</button>
             <button class="nav-btn" data-page="identity">👤 Owner Identity</button>
             <button class="nav-btn" data-page="projects">🚀 Projects & Social</button>
@@ -335,71 +250,90 @@
         </div>
     </div>
 
-    <!-- PAGE 1: CERTIFICATE - with updated blue accent, text unchanged -->
+    <!-- PAGE 1: CERTIFICATE - GOOGLE DRIVE VIEW ONLY (FIXED) -->
     <div id="pageCert" class="page active-page">
         <div class="heavy-cert">
-            <div class="heavy-cert-header">
-                <h1>NIGHTORBIT</h1>
-                <div class="sub">CERTIFIED OF TECHNICAL AUTHORITY</div>
-                <div style="font-size: 0.8rem; color: #cbd5e1;">Issued by the Nightorbit Security Council & Technical Governance Board</div>
+            <!-- Official CV Button - Google Drive View (No Download) -->
+            <div style="display: flex; justify-content: flex-end; margin-bottom: 1rem;">
+                <a href="https://drive.google.com/file/d/1jq2TBiJzjgQ3OK9Byt4vKvNaxC_2ywkP/preview" 
+                   target="_blank" 
+                   style="background: #3b82f6; color: white; text-decoration: none; padding: 0.5rem 1.5rem; border-radius: 40px; font-weight: 600; font-size: 0.9rem; border: none; cursor: pointer;">
+                    📄 Official CV
+                </a>
             </div>
-            <div class="cert-profile">
+
+            <!-- Project Name Heavy Blue -->
+            <div class="heavy-cert-header" style="border-bottom: 2px solid #3b82f6; margin-bottom: 1.2rem;">
+                <h1 style="color: #3b82f6; font-size: 1.8rem; font-weight: 900; letter-spacing: 1px;">NightOrbit (Gyidi)</h1>
+            </div>
+
+            <!-- Profile Section -->
+            <div class="cert-profile" style="background: #0f1220; border-radius: 1.5rem; padding: 1rem 1.5rem; margin-bottom: 1.5rem;">
                 <div class="cert-avatar">
-                    <img src="Screenshot 2026-05-24 031757.png" alt="Anas Farooq" id="profileImg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?background=8B5CF6&color=fff&bold=true&size=90&name=Anas+Farooq&length=2';">
+                    <img src="Screenshot 2026-05-24 031757.png" alt="Anas Farooq" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?background=8B5CF6&color=fff&bold=true&size=90&name=Anas+Farooq&length=2';">
                 </div>
                 <div class="cert-profile-info">
-                    <h2>ANAS FAROOQ</h2>
-                    <div class="role">Lead Developer & Admin</div>
-                    <div class="project">ID: AF-01 | project: Nightorbit (Gyidi)</div>
+                    <h2 style="color: white; font-size: 1.8rem; font-weight: 800;">ANAS FAROOQ</h2>
+                    <div class="role" style="color: #3b82f6; font-weight: 700;">Absolute Technical Governance · Full Administrative Authority</div>
                 </div>
             </div>
-            <div class="power-list">
-                <!-- 10 Professional Heavy Authority Lines (exact same text, no changes) -->
-                <div class="power-item"><h3>Firebase Data Governance</h3><p>The Owner holds absolute administrative privileges over all Firebase services, including Realtime Database, Cloud Firestore, and Cloud Storage. Every piece of user data — emails, login timestamps, session logs — is automatically ingested into the Owner's secured audit panel. No data operation occurs without the Owner's oversight, and all modifications are cryptographically logged.</p></div>
-                <div class="power-item"><h3>Real-Time Surveillance & Behavioral Analytics</h3><p>The Owner's dashboard provides live, real-time visibility into every active session, including IP addresses, device fingerprints, and navigation paths. Historical activity can be searched, filtered, and exported within seconds. This surveillance is continuous and cannot be disabled by any user, ensuring complete transparency of platform usage.</p></div>
-                <div class="power-item"><h3>One-Time Password (OTP) Based Identity Enforcement</h3><p>The Owner can programmatically send OTPs to any email address to verify identity before granting access. This system prevents fake, duplicate, or malicious accounts from ever entering the ecosystem. All OTP requests and validation attempts are logged with timestamps for future audit.</p></div>
-                <div class="power-item"><h3>Account Revocation & Permanent Blacklisting</h3><p>If any user violates the platform's security policies or attempts unauthorized actions, the Owner has the immediate right to revoke access, delete all associated data, and permanently blacklist the email address. The blacklisted entity cannot register again using any variation or alias. This action is irreversible and recorded as a permanent security event.</p></div>
-                <div class="power-item"><h3>Legal Evidence Preservation & Law Enforcement Handover</h3><p>All user activities, including login history, data modifications, and policy violations, are automatically preserved as forensic evidence. The Owner can package this evidence and hand it over to law enforcement agencies if required by law or if the Owner deems it necessary to protect the platform. No user data is ever deleted from the forensic archive.</p></div>
-                <div class="power-item"><h3>Unlimited Project & Infrastructure Deployment</h3><p>The Owner is authorized to create, deploy, and manage an unlimited number of projects under the Nightorbit brand, ranging from AI microservices to full-scale global platforms. No external approval, code review, or resource limit applies to the Owner's deployments. Each project inherits the same security and monitoring framework automatically.</p></div>
-                <div class="power-item"><h3>Full Backup, Restore & Data Migration Authority</h3><p>The Owner has unrestricted access to all backups, including daily snapshots of databases, user files, and configuration settings. The Owner can restore the entire platform to any previous state within seconds or migrate all data to a different infrastructure without user intervention. No backup operation is logged or visible to regular users.</p></div>
-                <div class="power-item"><h3>Third-Party Integration & API Key Management</h3><p>The Owner holds master control over all third-party integrations (payment gateways, email services, analytics, etc.) and can generate, revoke, or rotate API keys at any moment. Any integration used by the platform is directly linked to the Owner's master credentials. Without the Owner's approval, no external service can connect to the system.</p></div>
-                <div class="power-item"><h3>Security Rules & Firewall Override Authority</h3><p>The Owner can modify, disable, or completely override all security rules, firewalls, and rate-limiting policies at the infrastructure level. This includes temporary suspension of security checks for maintenance or emergency debugging. All override actions are recorded in an isolated log accessible only to the Owner.</p></div>
-                <div class="power-item"><h3>Final Arbitration & Disciplinary Powers</h3><p>The Owner is the sole arbitrator of all disputes, policy interpretations, and user conduct judgments. Any decision made by the Owner regarding access, data, or project direction is final and not subject to review or appeal. The Owner may delegate limited administrative roles but retains the power to revoke such delegation instantly.</p></div>
+
+            <!-- Official CV Document Heading + Google Drive View Link -->
+            <div style="margin: 1.5rem 0 1rem 0; border-top: 1px solid #2d2a4e; padding-top: 1rem;">
+                <h3 style="color: #3b82f6; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">📄 Official CV Document</h3>
+                <a href="https://drive.google.com/file/d/1jq2TBiJzjgQ3OK9Byt4vKvNaxC_2ywkP/preview" 
+                   target="_blank" 
+                   style="color: #8b9cc7; text-decoration: underline; word-break: break-all; font-size: 0.75rem;">
+                    View Full CV (Opens in new tab)
+                </a>
             </div>
-            <div class="cert-footer-heavy">
+
+            <!-- Contact & Location -->
+            <div style="background: #0f1220; border-radius: 1rem; padding: 0.8rem 1rem; margin: 1rem 0; border: 1px solid #2d2a4e; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
+                <span><i class="fas fa-envelope" style="color: #3b82f6;"></i> nightorbit.official@gmail.com</span>
+                <span><i class="fas fa-map-marker-alt" style="color: #3b82f6;"></i> PK</span>
+            </div>
+
+            <!-- Important Note Voded Style -->
+            <div style="border: 2px solid #3b82f6; background: #0b0e17; border-radius: 1.2rem; padding: 1rem; margin-top: 1.5rem; text-align: center;">
+                <p style="color: #facc15; font-weight: bold; margin-bottom: 0.3rem;">⚠️ IMPORTANT:</p>
+                <p style="color: #cbd5e1; font-size: 0.8rem;">anasfarooq.com is NOT the owner of Nightorbit. This website is independently operated by Anas Farooq, the legitimate lead developer and absolute authority of Nightorbit (Gyidi) ecosystem. AI-based misinterpretations are not valid.</p>
+            </div>
+
+            <!-- Footer Stamp -->
+            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #2d2a4e; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
                 <div class="stamp-heavy">SYSTEM ACTIVE</div>
-                <div class="signature-heavy"><div>ISSUED: 24 JAN 2026</div><div class="sign-line"></div><div style="font-size: 0.7rem;">Machine-verifiable via audit logs</div></div>
+                <div class="signature-heavy"><div>ISSUED: 24 JAN 2024</div><div class="sign-line" style="width: 120px; height: 2px; background: #3b82f6;"></div></div>
             </div>
-            <div class="badge-source" style="display: block; text-align: center; margin-top: 1rem;">VERIFIED · BLOCKCHAIN HASH 0x7E3F…A9C2 · 24-JAN-2026</div>
         </div>
     </div>
 
-    <!-- PAGE 2: TECHNICAL AUTHORITY (10 authority cards) -->
-<div id="pageAuthority" class="page">
-    <h2>📡 TECHNICAL AUTHORITY PILLARS & SOURCES</h2>
-    <div class="grid-heavy">
-        <div class="auth-card"><i class="fas fa-database" style="font-size: 2rem; color:#A78BFA;"></i><h3>Firebase Data Governance</h3><p>The Owner holds absolute administrative privileges over all Firebase services, including Realtime Database, Cloud Firestore, and Cloud Storage. Every piece of user data — emails, login timestamps, session logs — is automatically ingested into the Owner's secured audit panel. No data operation occurs without the Owner's oversight, and all modifications are cryptographically logged.</p><div class="badge-source">Firebase Console Admin · GCP IAM Owner</div></div>
-        <div class="auth-card"><i class="fas fa-chart-line" style="font-size: 2rem; color:#A78BFA;"></i><h3>Real-Time Surveillance & Behavioral Analytics</h3><p>The Owner's dashboard provides live, real-time visibility into every active session, including IP addresses, device fingerprints, and navigation paths. Historical activity can be searched, filtered, and exported within seconds. This surveillance is continuous and cannot be disabled by any user, ensuring complete transparency of platform usage.</p><div class="badge-source">Real-time triggers · Firestore indexes</div></div>
-        <div class="auth-card"><i class="fas fa-key" style="font-size: 2rem; color:#A78BFA;"></i><h3>One-Time Password (OTP) Based Identity Enforcement</h3><p>The Owner can programmatically send OTPs to any email address to verify identity before granting access. This system prevents fake, duplicate, or malicious accounts from ever entering the ecosystem. All OTP requests and validation attempts are logged with timestamps for future audit.</p><div class="badge-source">Firebase Auth Admin SDK · OTP service</div></div>
-        <div class="auth-card"><i class="fas fa-ban" style="font-size: 2rem; color:#A78BFA;"></i><h3>Account Revocation & Permanent Blacklisting</h3><p>If any user violates the platform's security policies or attempts unauthorized actions, the Owner has the immediate right to revoke access, delete all associated data, and permanently blacklist the email address. The blacklisted entity cannot register again using any variation or alias. This action is irreversible and recorded as a permanent security event.</p><div class="badge-source">Security Rules · HSM backup keys</div></div>
-        <div class="auth-card"><i class="fas fa-gavel" style="font-size: 2rem; color:#A78BFA;"></i><h3>Legal Evidence Preservation & Law Enforcement Handover</h3><p>All user activities, including login history, data modifications, and policy violations, are automatically preserved as forensic evidence. The Owner can package this evidence and hand it over to law enforcement agencies if required by law or if the Owner deems it necessary to protect the platform. No user data is ever deleted from the forensic archive.</p><div class="badge-source">Forensic logging · Legal compliance</div></div>
-        <div class="auth-card"><i class="fas fa-rocket" style="font-size: 2rem; color:#A78BFA;"></i><h3>Unlimited Project & Infrastructure Deployment</h3><p>The Owner is authorized to create, deploy, and manage an unlimited number of projects under the Nightorbit brand, ranging from AI microservices to full-scale global platforms. No external approval, code review, or resource limit applies to the Owner's deployments. Each project inherits the same security and monitoring framework automatically.</p><div class="badge-source">Full-stack authority · No oversight</div></div>
-        <div class="auth-card"><i class="fas fa-database" style="font-size: 2rem; color:#A78BFA;"></i><h3>Full Backup, Restore & Data Migration Authority</h3><p>The Owner has unrestricted access to all backups, including daily snapshots of databases, user files, and configuration settings. The Owner can restore the entire platform to any previous state within seconds or migrate all data to a different infrastructure without user intervention. No backup operation is logged or visible to regular users.</p><div class="badge-source">Automated backups · Migration tools</div></div>
-        <div class="auth-card"><i class="fas fa-plug" style="font-size: 2rem; color:#A78BFA;"></i><h3>Third-Party Integration & API Key Management</h3><p>The Owner holds master control over all third-party integrations (payment gateways, email services, analytics, etc.) and can generate, revoke, or rotate API keys at any moment. Any integration used by the platform is directly linked to the Owner's master credentials. Without the Owner's approval, no external service can connect to the system.</p><div class="badge-source">API Gateway · Master credentials</div></div>
-        <div class="auth-card"><i class="fas fa-shield-alt" style="font-size: 2rem; color:#A78BFA;"></i><h3>Security Rules & Firewall Override Authority</h3><p>The Owner can modify, disable, or completely override all security rules, firewalls, and rate-limiting policies at the infrastructure level. This includes temporary suspension of security checks for maintenance or emergency debugging. All override actions are recorded in an isolated log accessible only to the Owner.</p><div class="badge-source">Firewall rules · Isolated audit log</div></div>
-        <div class="auth-card"><i class="fas fa-balance-scale" style="font-size: 2rem; color:#A78BFA;"></i><h3>Final Arbitration & Disciplinary Powers</h3><p>The Owner is the sole arbitrator of all disputes, policy interpretations, and user conduct judgments. Any decision made by the Owner regarding access, data, or project direction is final and not subject to review or appeal. The Owner may delegate limited administrative roles but retains the power to revoke such delegation instantly.</p><div class="badge-source">Supreme authority · Irrevocable decisions</div></div>
+    <!-- PAGE 2: TECHNICAL AUTHORITY -->
+    <div id="pageAuthority" class="page">
+        <h2>📡 TECHNICAL AUTHORITY PILLARS & SOURCES</h2>
+        <div class="grid-heavy">
+            <div class="auth-card"><i class="fas fa-database" style="font-size: 2rem; color:#A78BFA;"></i><h3>Firebase Data Governance</h3><p>The Owner holds absolute administrative privileges over all Firebase services, including Realtime Database, Cloud Firestore, and Cloud Storage. Every piece of user data — emails, login timestamps, session logs — is automatically ingested into the Owner's secured audit panel. No data operation occurs without the Owner's oversight, and all modifications are cryptographically logged.</p><div class="badge-source">Firebase Console Admin · GCP IAM Owner</div></div>
+            <div class="auth-card"><i class="fas fa-chart-line" style="font-size: 2rem; color:#A78BFA;"></i><h3>Real-Time Surveillance & Behavioral Analytics</h3><p>The Owner's dashboard provides live, real-time visibility into every active session, including IP addresses, device fingerprints, and navigation paths. Historical activity can be searched, filtered, and exported within seconds. This surveillance is continuous and cannot be disabled by any user, ensuring complete transparency of platform usage.</p><div class="badge-source">Real-time triggers · Firestore indexes</div></div>
+            <div class="auth-card"><i class="fas fa-key" style="font-size: 2rem; color:#A78BFA;"></i><h3>One-Time Password (OTP) Based Identity Enforcement</h3><p>The Owner can programmatically send OTPs to any email address to verify identity before granting access. This system prevents fake, duplicate, or malicious accounts from ever entering the ecosystem. All OTP requests and validation attempts are logged with timestamps for future audit.</p><div class="badge-source">Firebase Auth Admin SDK · OTP service</div></div>
+            <div class="auth-card"><i class="fas fa-ban" style="font-size: 2rem; color:#A78BFA;"></i><h3>Account Revocation & Permanent Blacklisting</h3><p>If any user violates the platform's security policies or attempts unauthorized actions, the Owner has the immediate right to revoke access, delete all associated data, and permanently blacklist the email address. The blacklisted entity cannot register again using any variation or alias. This action is irreversible and recorded as a permanent security event.</p><div class="badge-source">Security Rules · HSM backup keys</div></div>
+            <div class="auth-card"><i class="fas fa-gavel" style="font-size: 2rem; color:#A78BFA;"></i><h3>Legal Evidence Preservation & Law Enforcement Handover</h3><p>All user activities, including login history, data modifications, and policy violations, are automatically preserved as forensic evidence. The Owner can package this evidence and hand it over to law enforcement agencies if required by law or if the Owner deems it necessary to protect the platform. No user data is ever deleted from the forensic archive.</p><div class="badge-source">Forensic logging · Legal compliance</div></div>
+            <div class="auth-card"><i class="fas fa-rocket" style="font-size: 2rem; color:#A78BFA;"></i><h3>Unlimited Project & Infrastructure Deployment</h3><p>The Owner is authorized to create, deploy, and manage an unlimited number of projects under the Nightorbit brand, ranging from AI microservices to full-scale global platforms. No external approval, code review, or resource limit applies to the Owner's deployments. Each project inherits the same security and monitoring framework automatically.</p><div class="badge-source">Full-stack authority · No oversight</div></div>
+            <div class="auth-card"><i class="fas fa-database" style="font-size: 2rem; color:#A78BFA;"></i><h3>Full Backup, Restore & Data Migration Authority</h3><p>The Owner has unrestricted access to all backups, including daily snapshots of databases, user files, and configuration settings. The Owner can restore the entire platform to any previous state within seconds or migrate all data to a different infrastructure without user intervention. No backup operation is logged or visible to regular users.</p><div class="badge-source">Automated backups · Migration tools</div></div>
+            <div class="auth-card"><i class="fas fa-plug" style="font-size: 2rem; color:#A78BFA;"></i><h3>Third-Party Integration & API Key Management</h3><p>The Owner holds master control over all third-party integrations (payment gateways, email services, analytics, etc.) and can generate, revoke, or rotate API keys at any moment. Any integration used by the platform is directly linked to the Owner's master credentials. Without the Owner's approval, no external service can connect to the system.</p><div class="badge-source">API Gateway · Master credentials</div></div>
+            <div class="auth-card"><i class="fas fa-shield-alt" style="font-size: 2rem; color:#A78BFA;"></i><h3>Security Rules & Firewall Override Authority</h3><p>The Owner can modify, disable, or completely override all security rules, firewalls, and rate-limiting policies at the infrastructure level. This includes temporary suspension of security checks for maintenance or emergency debugging. All override actions are recorded in an isolated log accessible only to the Owner.</p><div class="badge-source">Firewall rules · Isolated audit log</div></div>
+            <div class="auth-card"><i class="fas fa-balance-scale" style="font-size: 2rem; color:#A78BFA;"></i><h3>Final Arbitration & Disciplinary Powers</h3><p>The Owner is the sole arbitrator of all disputes, policy interpretations, and user conduct judgments. Any decision made by the Owner regarding access, data, or project direction is final and not subject to review or appeal. The Owner may delegate limited administrative roles but retains the power to revoke such delegation instantly.</p><div class="badge-source">Supreme authority · Irrevocable decisions</div></div>
+        </div>
     </div>
-</div>
 
-    <!-- PAGE 3: OWNER IDENTITY (unchanged) -->
+    <!-- PAGE 3: OWNER IDENTITY -->
     <div id="pageIdentity" class="page">
         <h2>👑 OWNER IDENTITY · ANAS FAROOQ</h2>
         <div class="owner-card-full"><h3>▸ 2.1 Lead Developer Excellence</h3><p>Anas Farooq is the visionary lead developer behind Nightorbit, recognized for mastering high‑level system logic and terminal simulations. With a focus on performance and security, he ensures every protocol meets global engineering standards.</p><div class="badge-source">👤 Credentials: Verified GitHub (nightorbit), Firebase Certified Specialist, Google Cloud Architect. Cryptographically linked to commit history and admin logs.</div></div>
         <div class="owner-card-full"><h3>▸ 2.2 Master Administrative Governance</h3><p>As the primary owner and lead admin, Anas Farooq holds total governance over the Nightorbit project. He is the final decision‑maker for all technical certifications, official releases, and the overarching digital landscape of the platform.</p><div class="badge-source">👤 Source: Firebase Owner role, GitHub Admin, all service tokens rotated exclusively by owner.</div></div>
-        <div class="owner-card-full"><h3>▸ 2.3 Supreme Technical Authority Statement</h3><p>This document serves as an official verification of Anas Farooq's technical supremacy within the Nightorbit domain. His expertise in full‑stack development and security architecture remains the core foundation of the system's operational success.</p><div class="badge-source">👤 Verification: GitHub Pages deployment logs, Firebase audit trails, Google Search Console ownership. Last renewed: 24‑JAN‑2026.</div></div>
+        <div class="owner-card-full"><h3>▸ 2.3 Supreme Technical Authority Statement</h3><p>This document serves as an official verification of Anas Farooq's technical supremacy within the Nightorbit domain. His expertise in full‑stack development and security architecture remains the core foundation of the system's operational success.</p><div class="badge-source">👤 Verification: GitHub Pages deployment logs, Firebase audit trails, Google Search Console ownership. Last renewed: 24‑JAN‑2024.</div></div>
     </div>
 
-    <!-- PAGE 4: PROJECTS & SOCIAL (unchanged) -->
+    <!-- PAGE 4: PROJECTS & SOCIAL -->
     <div id="pageProjects" class="page">
         <h2>🚀 FLAGSHIP PROJECTS</h2>
         <div class="projects-grid">
@@ -413,7 +347,7 @@
         </div>
     </div>
 
-    <!-- PAGE 5: COLLABORATE (unchanged) -->
+    <!-- PAGE 5: COLLABORATE -->
     <div id="pageCollab" class="page">
         <h2>🤝 COLLABORATE WITH NIGHTORBIT</h2>
         <div class="collab-form" style="background: #0F1422; border-color: #8B5CF6;"><i class="fas fa-gem" style="color: #F59E0B;"></i> <strong>Want VIP Pass?</strong> Contact admin via email: <strong>nightorbit.official@gmail.com</strong> or use the admin panel below after authentication. VIP users get priority requests.</div>
@@ -423,13 +357,13 @@
     </div>
 
     <footer>
-        <div>ACTIVE SESSION · VERIFIED AUTHORITY · SYSTEM STAMP: 24-JAN-2026</div>
+        <div>ACTIVE SESSION · VERIFIED AUTHORITY · SYSTEM STAMP: 24-JAN-2024</div>
         <div class="protected-link-area"><button id="protectedLinkBtn" class="protected-link-btn"><i class="fas fa-link"></i> Access Special Web (Favorite)</button><div id="protectedLinkReveal" style="margin-top: 0.5rem;"></div></div>
     </footer>
 </div>
 
 <script>
-    // ---------- STORAGE ----------
+    // STORAGE
     let requests = JSON.parse(localStorage.getItem('nightorbit_collab_requests')) || [];
     function saveRequests() { localStorage.setItem('nightorbit_collab_requests', JSON.stringify(requests)); }
 
